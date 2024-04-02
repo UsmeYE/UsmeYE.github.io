@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #ffffff, #ffffff);
+}
+
+h1 {
+    color: rgb(160, 198, 255);
+    text-align: center;
+}
+
+p {
+    color: rgb(129, 133, 139);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.texto {
+    width: 70vw;
+    margin: auto;
+}
+
+.menu container{
+max-width: 1100px;
+margin: 0 auto;
+}
+
+.back{
+    padding: 32px;
+    background-color: rgb(52 63 89 / 75%);
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+#menu_buttom{
+    padding: 10px;
+} 
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: rgb(27, 105, 150);
+}
+
+#menu{
+    display: none;
+}
+
+.logo{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 991px){
+    .menu{
+        padding: 0;
+    }
+
+
+.menu label{
+    display: initial;
+}
+
+.back{
+    padding: 40px;
+}
+
+.menu .navbar{
+    position: absolute;
+    top: 95%;
+    left: 0;
+    right: 0;
+    background-color: rgb(41 56 79 / 50%);
+    display: none;
+}
+
+.menu .navbar ul li{
+    width: 100%;
+}
+
+#menu:checked ~ .navbar{
+    display: initial;
+}
+
+}
